@@ -1,13 +1,22 @@
-{
-  "users": [
-    { "id": 1, "name": "Alice Johnson", "email": "alice.johnson@example.com" },
-    { "id": 2, "name": "Bob Smith", "email": "bob.smith@example.com" },
-    { "id": 3, "name": "Charlie Brown", "email": "charlie.brown@example.com" },
-    { "id": 4, "name": "Diana Prince", "email": "diana.prince@example.com" },
-    { "id": 5, "name": "Ethan Hunt", "email": "ethan.hunt@example.com" },
-    { "id": 6, "name": "Fiona Gallagher", "email": "fiona.gallagher@example.com" },
-    { "id": 7, "name": "George Clooney", "email": "george.clooney@example.com" },
-    { "id": 8, "name": "Hannah Montana", "email": "hannah.montana@example.com" },
-    { "id": 9, "name": "Ian Somerhalder", "email": "ian.somerhalder@example.com" }
-  ]
-}
+[
+    {"id": 1, "name": "John Doe", "age": 25, "city": "New York"},
+    {"id": 2, "name": "Jane Smith", "age": 30, "city": "Los Angeles"},
+    {"id": 3, "name": "Alice Johnson", "age": 22, "city": "Chicago"},
+    {"id": 4, "name": "Bob Brown", "age": 28, "city": "Houston"},
+    {"id": 5, "name": "Charlie White", "age": 35, "city": "Phoenix"},
+    {"id": 6, "name": "David Black", "age": 26, "city": "San Antonio"},
+    {"id": 7, "name": "Emma Green", "age": 24, "city": "San Diego"},
+    {"id": 8, "name": "Fiona Blue", "age": 27, "city": "Dallas"},
+    {"id": 9, "name": "George Red", "age": 32, "city": "San Jose"},
+    {"id": 10, "name": "Hannah Yellow", "age": 21, "city": "Austin"},
+    {"id": 11, "name": "Irene Pink", "age": 29, "city": "San Francisco"},
+    {"id": 12, "name": "Jack Purple", "age": 23, "city": "Columbus"},
+    {"id": 13, "name": "Karen Gray", "age": 33, "city": "Fort Worth"},
+    {"id": 14, "name": "Leo Brown", "age": 20, "city": "Indianapolis"},
+    {"id": 15, "name": "Mona White", "age": 31, "city": "Charlotte"},
+    {"id": 16, "name": "Nina Black", "age": 28, "city": "Seattle"},
+    {"id": 17, "name": "Oscar Green", "age": 22, "city": "Denver"},
+    {"id": 18, "name": "Paul Blue", "age": 26, "city": "Washington"},
+    {"id": 19, "name": "Quincy Red", "age": 34, "city": "Boston"},
+    {"id": 20, "name": "Rachel Yellow", "age": 21, "city": "El Paso"}
+]
