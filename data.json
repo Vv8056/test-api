@@ -9,6 +9,5 @@
     { "id": 7, "name": "George Clooney", "email": "george.clooney@example.com" },
     { "id": 8, "name": "Hannah Montana", "email": "hannah.montana@example.com" },
     { "id": 9, "name": "Ian Somerhalder", "email": "ian.somerhalder@example.com" },
-    { "id": 10, "name": "Jessica Jones", "email": "jessica.jones@example.com" }
   ]
 }
