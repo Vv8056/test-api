@@ -1,5 +1,5 @@
 [
-    {"id": 1, "name": "John Doe", "age": 25, "city": "New York", "logo": "<i class="fa-brands fa-java"></i>"},
+    {"id": 1, "name": "John Doe", "age": 25, "city": "New York", "logo": "fa-brands fa-java"},
     {"id": 2, "name": "Jane Smith", "age": 30, "city": "Los Angeles"},
     {"id": 3, "name": "Alice Johnson", "age": 22, "city": "Chicago"},
     {"id": 4, "name": "Bob Brown", "age": 28, "city": "Houston"},
