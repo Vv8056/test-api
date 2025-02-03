@@ -86,4 +86,4 @@ def get_user_certificate(user_id):
     return jsonify({"error": "Certificate not found for this user"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
