@@ -25,5 +25,14 @@ def get_user(user_id):
         return jsonify(user)
     return jsonify({"error": "User not found"}), 404
 
+# GET a user's certificate by ID
+@app.route('/users/<int:user_id>/certificate', methods=['GET'])
+def get_user_certificate(user_id):
+    data = load_data()
+    user = next((item for item in data["users"] if item["id"] == user_id), None)
+    if user and "certificate" in user:
+        return jsonify(user["certificate"])
+    return jsonify({"error": "Certificate not found for this user"}), 404
+
 if __name__ == '__main__':
     app.run(debug=False)
