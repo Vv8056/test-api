@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/certificates/(.*)",
-      "dest": "/static/certificates/"
+      "dest": "/static/certificates/$1"
     },
     {
       "src": "/(.*)",
