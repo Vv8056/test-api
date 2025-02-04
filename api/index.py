@@ -45,6 +45,9 @@ import json
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+# Hardcoded paths (Replace with actual paths if needed)
+CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists in the same directory
+
 # Load data from JSON file
 def load_data():
     try:
