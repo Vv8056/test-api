@@ -190,16 +190,17 @@
 
 # new
 
-from flask import Flask, jsonify, send_file
+from flask import Flask, jsonify, send_from_directory
 import json
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Hardcoded paths (Replace with actual paths if needed)
 DATA_FILE = "data.json"
-CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists in the same directory
+CERTIFICATES_DIR = os.path.join(os.getcwd(), "static", "certificates")  # Ensure this folder exists
 
 # Load data from JSON file
 def load_data():
@@ -237,12 +238,9 @@ def get_user_certificate(user_id):
 # Serve a PDF certificate file
 @app.route("/certificates/<filename>", methods=["GET"])
 def get_certificate(filename):
-    file_path = CERTIFICATES_DIR + filename  # Construct file path
-
-    try:
-        return send_file(file_path, as_attachment=True)
-    except FileNotFoundError:
-        return jsonify({"error": "Certificate file not found"}), 404
+    if os.path.exists(os.path.join(CERTIFICATES_DIR, filename)):
+        return send_from_directory(CERTIFICATES_DIR, filename, as_attachment=True)
+    return jsonify({"error": "Certificate file not found"}), 404
 
 if __name__ == "__main__":
     app.run(debug=False)
