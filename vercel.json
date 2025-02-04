@@ -20,5 +20,8 @@
       "src": "/(.*)",
       "dest": "api/index.py"
     }
-  ]
+  ],
+  "static": {
+    "directory": "static"
+  }
 }
