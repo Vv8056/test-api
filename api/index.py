@@ -112,7 +112,7 @@ CORS(app)  # Allow all origins (Consider restricting this in production)
 
 # Paths
 DATA_FILE = "data.json"
-CERTIFICATES_DIR = "certificates"  # Ensure this folder exists
+CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists
 
 # Load data from JSON file
 def load_data():
