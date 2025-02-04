@@ -154,32 +154,32 @@ def get_user_certificate(user_id):
     return jsonify({"error": "Certificate not found for this user"}), 404
 
 # Serve a PDF certificate file
-# @app.route("/certificates/<filename>", methods=["GET"])
-# def get_certificate(filename):
-#     file_path = os.path.join(CERTIFICATES_DIR, filename)  # Construct file path properly
-
-#     if os.path.exists(file_path):  
-#         try:
-#             return send_file(file_path, as_attachment=True)
-#         except Exception as e:
-#             print(f"Error sending file: {e}")  # Debugging log
-#             return jsonify({"error": "Failed to serve the certificate"}), 500
-
-#     return jsonify({"error": "Certificate file not found"}), 404
-
 @app.route("/certificates/<filename>", methods=["GET"])
 def get_certificate(filename):
-    file_path = os.path.join(CERTIFICATES_DIR, filename)
+    file_path = os.path.join(CERTIFICATES_DIR, filename)  # Construct file path properly
 
-    # Check if file exists before sending
-    if not os.path.exists(file_path):
-        return jsonify({"error": "Certificate file not found"}), 404
+    if os.path.exists(file_path):  
+        try:
+            return send_file(file_path, as_attachment=True)
+        except Exception as e:
+            print(f"Error sending file: {e}")  # Debugging log
+            return jsonify({"error": "Failed to serve the certificate"}), 500
 
-    try:
-        return send_file(file_path, as_attachment=False)
-    except Exception as e:
-        print(f"Error sending file: {e}")  # Log error
-        return jsonify({"error": "Internal Server Error"}), 500
+    return jsonify({"error": "Certificate file not found"}), 404
+
+# @app.route("/certificates/<filename>", methods=["GET"])
+# def get_certificate(filename):
+#     file_path = os.path.join(CERTIFICATES_DIR, filename)
+
+#     # Check if file exists before sending
+#     if not os.path.exists(file_path):
+#         return jsonify({"error": "Certificate file not found"}), 404
+
+#     try:
+#         return send_file(file_path, as_attachment=False)
+#     except Exception as e:
+#         print(f"Error sending file: {e}")  # Log error
+#         return jsonify({"error": "Internal Server Error"}), 500
 
 if __name__ == "__main__":
     app.run(debug=False)
