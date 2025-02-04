@@ -85,5 +85,14 @@ def get_user_certificate(user_id):
     
     return jsonify({"error": "Certificate not found for this user"}), 404
 
+@app.route("/certificates/<filename>", methods=["GET"])
+def get_certificate(filename):
+    file_path = CERTIFICATES_DIR + filename  # Construct file path
+
+    try:
+        return send_file(file_path, as_attachment=True)
+    except FileNotFoundError:
+        return jsonify({"error": "Certificate file not found"}), 404
+
 if __name__ == '__main__':
     app.run(debug=False)
