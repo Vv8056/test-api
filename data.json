@@ -68,6 +68,19 @@
           "issuedDate": "2022-11-12",
           "expirationDate": "2025-11-12",
           "file": "excel-B.pdf"
+        },
+        {
+        "id": 6,
+        "name": "Charlie blaxk",
+        "age": 35,
+        "city": "Phoenix",
+        "logo": "fa-brands fa-node",
+        "certificate": {
+          "certificateId": "CERT-005",
+          "certificateName": "Ethical Hacking",
+          "issuedDate": "2022-11-12",
+          "expirationDate": "2025-11-12",
+          "file": "Cyber-security.pdf"
         }
       }
     ]
