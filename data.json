@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Java",
-      "age": 25,
+      "certified": "Great Learning",
       "color": "red",
       "logo": "fa-brands fa-java",
       "certificate": {
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "name": "Prog Basics",
-      "age": 30,
+      "certified": "Great Learning",
       "color": "blue",
       "logo": "fa-solid fa-code",
       "certificate": {
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Html",
-      "age": 22,
+      "certified": "Great Learning",
       "color": "orange",
       "logo": "fa-brands fa-html5",
       "certificate": {
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "name": "Excel Int.",
-      "age": 28,
+      "certified": "Great Learning",
       "color": "green",
       "logo": "fa-solid fa-file-excel",
       "certificate": {
@@ -59,7 +59,7 @@
     {
       "id": 5,
       "name": "Excel Beg.",
-      "age": 35,
+      "certified": "Great Learning",
       "color": "green",
       "logo": "fa-solid fa-file-excel",
       "certificate": {
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "name": "Cyber Security",
-      "age": 35,
+      "certified": "Skill India",
       "color": "black",
       "logo": "fa-solid fa-user-secret",
       "certificate": {
