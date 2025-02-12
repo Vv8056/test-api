@@ -113,7 +113,7 @@ CORS(app)  # Allow all origins (Consider restricting this in production)
 
 # Paths
 DATA_FILE = "data.json"
-DATA_EXP_FILE = "experience.json"
+DATA_EXP_FILE = os.path.join(os.path.dirname(__file__), "experience.json")
 # CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists
 # Folder where PDFs are stored
 PDF_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'certificates')
