@@ -1,28 +1,30 @@
 {
   "users": [
+{
+  "id": 1,
+  "name": "Java",
+  "certified": "Great Learning",
+  "color": "red",
+  "logo": "fa-brands fa-java",
+  "certificate": {
+    "certificateId": "CERT-001",
+    "certificateName": "Python Programming",
+    "issuedDate": "2023-01-15",
+    "expirationDate": "2026-01-15",
+    "file": "java-Prog.pdf"
+  },
+  "experience": [
     {
-      "id": 1,
-      "name": "Java",
-      "certified": "Great Learning",
-      "color": "red",
-      "logo": "fa-brands fa-java",
-      "certificate": {
-        "certificateId": "CERT-001",
-        "certificateName": "Python Programming",
-        "issuedDate": "2023-01-15",
-        "expirationDate": "2026-01-15",
-        "file": "java-Prog.pdf"
+      "date": "2018 - 2019",
+      "title": "Illustrator",
+      "company": {
+        "name": "Creative Mind",
+        "url": "#"
       },
-      "experience": {
-        "date": "2018 - 2019",
-        "title": "Illustrator",
-        "company": {
-          "name": "Creative Mind",
-          "url": "#"
-        },
-        "description": "Created original illustrations for digital and print media."
-      }
-    },
+      "description": "Created original illustrations for digital and print media."
+    }
+  ]
+},
     {
       "id": 2,
       "name": "Prog Basics",
