@@ -113,6 +113,7 @@ CORS(app)  # Allow all origins (Consider restricting this in production)
 
 # Paths
 DATA_FILE = "data.json"
+DATA_EXP_FILE = "experience.json"
 # CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists
 # Folder where PDFs are stored
 PDF_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'certificates')
@@ -126,8 +127,22 @@ def load_data():
         print(f"Error loading JSON: {e}")
         return {"users": []}  # Return an empty list if the file is missing or broken
 
+def load_exp_data():
+    try:
+        with open(DATA_EXP_FILE, "r") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading JSON: {e}")
+        return {"users": []}  # Return an empty list if the file is missing or broken
+        
 # GET all users
 @app.route("/users", methods=["GET"])
+def get_users():
+    data = load_data()
+    return jsonify(data.get("users", []))  # Ensure default empty list
+
+# GET all users experience
+@app.route("/users_exp", methods=["GET"])
 def get_users():
     data = load_data()
     return jsonify(data.get("users", []))  # Ensure default empty list
