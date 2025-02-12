@@ -113,7 +113,6 @@ CORS(app)  # Allow all origins (Consider restricting this in production)
 
 # Paths
 DATA_FILE = "data.json"
-DATA_EXP_FILE = os.path.join(os.path.dirname(__file__), "experience.json")
 # CERTIFICATES_DIR = "certificates/"  # Ensure this folder exists
 # Folder where PDFs are stored
 PDF_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'certificates')
@@ -126,33 +125,11 @@ def load_data():
     except (FileNotFoundError, json.JSONDecodeError) as e:
         print(f"Error loading JSON: {e}")
         return {"users": []}  # Return an empty list if the file is missing or broken
-
-# Load experience data
-def load_exp_data():
-    try:
-        with open(DATA_EXP_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error loading experience.json: {e}")
-        return {"users": []}  # Return an empty list if file is missing or corrupted
         
 # GET all users
 @app.route("/users", methods=["GET"])
 def get_users():
     data = load_data()
-    return jsonify(data.get("users", []))  # Ensure default empty list
-
-# GET all users experience
-# @app.route("/users_exp", methods=["GET"])
-# def get_users_experience():
-#     data = load_exp_data()  # Load experience data instead of general data
-#     return jsonify(data.get("users", []))  # Ensure default empty list
-
-
-# GET all users experience
-@app.route("/users_exp", methods=["GET"])
-def get_users_experience():
-    data = load_exp_data()
     return jsonify(data.get("users", []))  # Ensure default empty list
 
 # GET a single user by ID
