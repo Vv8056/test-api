@@ -1,41 +1,40 @@
 {
-    "experience": [
-      {
-        "date": "2018 - 2019",
-        "title": "Illustrator",
-        "company": {
-          "name": "Creative Mind",
-          "url": "#0"
-        },
-        "description": "I created original images for a range of digital and printed products."
+  "experience": [
+    {
+      "date": "2018 - 2019",
+      "title": "Illustrator",
+      "company": {
+        "name": "Creative Mind",
+        "url": "#"
       },
-      {
-        "date": "2019 - 2021",
-        "title": "UI/UX Designer",
-        "company": {
-          "name": "Pixel Perfect",
-          "url": "#1"
-        },
-        "description": "Designed intuitive user interfaces and enhanced user experiences for web and mobile applications."
+      "description": "Created original illustrations for digital and print media."
+    },
+    {
+      "date": "2019 - 2021",
+      "title": "UI/UX Designer",
+      "company": {
+        "name": "Pixel Perfect",
+        "url": "#"
       },
-      {
-        "date": "2021 - 2023",
-        "title": "Frontend Developer",
-        "company": {
-          "name": "Tech Innovations",
-          "url": "#2"
-        },
-        "description": "Developed interactive and responsive websites using modern JavaScript frameworks."
+      "description": "Designed user-friendly interfaces and enhanced user experience for web and mobile applications."
+    },
+    {
+      "date": "2021 - 2023",
+      "title": "Frontend Developer",
+      "company": {
+        "name": "Tech Innovations",
+        "url": "#"
       },
-      {
-        "date": "2023 - Present",
-        "title": "Full Stack Developer",
-        "company": {
-          "name": "CodeCrafters",
-          "url": "#3"
-        },
-        "description": "Building scalable web applications and optimizing backend performance."
-      }
-    ]
-  }
-  
+      "description": "Developed interactive and responsive websites using modern JavaScript frameworks."
+    },
+    {
+      "date": "2023 - Present",
+      "title": "Full Stack Developer",
+      "company": {
+        "name": "CodeCrafters",
+        "url": "#"
+      },
+      "description": "Building scalable web applications and optimizing backend performance."
+    }
+  ]
+}
