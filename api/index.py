@@ -143,8 +143,8 @@ def get_users():
 
 # GET all users experience
 @app.route("/users_exp", methods=["GET"])
-def get_users():
-    data = load_data()
+def get_users_experience():
+    data = load_exp_data()  # Load experience data instead of general data
     return jsonify(data.get("users", []))  # Ensure default empty list
 
 # GET a single user by ID
