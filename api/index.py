@@ -142,10 +142,19 @@ def get_users():
     return jsonify(data.get("users", []))  # Ensure default empty list
 
 # GET all users experience
-@app.route("/users_exp", methods=["GET"])
-def get_users_experience():
-    data = load_exp_data()  # Load experience data instead of general data
-    return jsonify(data.get("users", []))  # Ensure default empty list
+# @app.route("/users_exp", methods=["GET"])
+# def get_users_experience():
+#     data = load_exp_data()  # Load experience data instead of general data
+#     return jsonify(data.get("users", []))  # Ensure default empty list
+
+# Load experience data
+def load_exp_data():
+    try:
+        with open(DATA_EXP_FILE, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading experience.json: {e}")
+        return {"users": []}  # Return an empty list if file is missing or corrupted
 
 # GET a single user by ID
 @app.route("/users/<int:user_id>", methods=["GET"])
