@@ -12,15 +12,15 @@
     "issuedDate": "2023-01-15",
     "expirationDate": "2026-01-15",
     "file": "java-Prog.pdf"
+  },
   "experience": {
-      "date": "2018 - 2019",
-      "title": "Illustrator",
-      "company": {
-        "name": "Creative Mind",
-        "url": "#"
-        "description": "Created original illustrations for digital and print media."
-      }
-    }
+    "date": "2018 - 2019",
+    "title": "Illustrator",
+    "company": {
+      "name": "Creative Mind",
+      "url": "#"
+    },
+    "description": "Created original illustrations for digital and print media."
   }
 },
     {
