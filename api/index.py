@@ -121,7 +121,7 @@ PDF_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'certificates')
 # Load data from JSON file
 def load_data():
     try:
-        with open(DATA_EXP_FILE, "r") as file:
+        with open(DATA_FILE, "r") as file:
             return json.load(file)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         print(f"Error loading JSON: {e}")
