@@ -177,7 +177,22 @@ def get_user_education(user_id):
     if not education:
         return jsonify({"error": "Education data not available for this user"}), 404
     return jsonify(education)
+
+@app.route("/projects", methods=["GET"])
+def get_all_projects():
+    data = load_data()
+    all_projects = []
+
+    # Loop through all users and collect projects
+    for user in data.get("users", []):
+        if "projects" in user and isinstance(user["projects"], list):
+            all_projects.extend(user["projects"])  # Add user's projects to the list
+
+    if not all_projects:
+        return jsonify({"error": "No projects found"}), 404
     
+    return jsonify(all_projects)
+
 # Serve a PDF certificate file
 @app.route('/list-pdfs', methods=['GET'])
 def list_pdfs():
