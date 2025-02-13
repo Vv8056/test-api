@@ -187,10 +187,8 @@ def get_all_projects():
     for user in data.get("users", []):
         if "projects" in user and isinstance(user["projects"], list):
             all_projects.extend(user["projects"])  # Add user's projects to the list
-
     if not all_projects:
         return jsonify({"error": "No projects found"}), 404
-    
     return jsonify(all_projects)
 
 # Serve a PDF certificate file
