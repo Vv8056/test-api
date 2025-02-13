@@ -1,28 +1,19 @@
 {
   "users": [
-{
-  "id": 1,
-  "name": "Java",
-  "certified": "Great Learning",
-  "color": "red",
-  "logo": "fa-brands fa-java",
-  "certificate": {
-    "certificateId": "CERT-001",
-    "certificateName": "Python Programming",
-    "issuedDate": "2023-01-15",
-    "expirationDate": "2026-01-15",
-    "file": "java-Prog.pdf"
-  },
-  "experience": {
-    "date": "2018 - 2019",
-    "title": "Illustrator",
-    "company": {
-      "name": "Creative Mind",
-      "url": "#"
+    {
+      "id": 1,
+      "name": "Java",
+      "certified": "Great Learning",
+      "color": "red",
+      "logo": "fa-brands fa-java",
+      "certificate": {
+        "certificateId": "CERT-001",
+        "certificateName": "Python Programming",
+        "issuedDate": "2023-01-15",
+        "expirationDate": "2026-01-15",
+        "file": "java-Prog.pdf"
+      }
     },
-    "description": "Created original illustrations for digital and print media."
-  }
-},
     {
       "id": 2,
       "name": "Prog Basics",
@@ -35,15 +26,6 @@
         "issuedDate": "2022-06-10",
         "expirationDate": "2025-06-10",
         "file": "prog-B.pdf"
-      },
-      "experience": {
-        "date": "2019 - 2021",
-        "title": "UI/UX Designer",
-        "company": {
-          "name": "Pixel Perfect",
-          "url": "#"
-        },
-        "description": "Designed user-friendly interfaces and enhanced user experience for web and mobile applications."
       }
     },
     {
@@ -58,15 +40,6 @@
         "issuedDate": "2021-09-25",
         "expirationDate": "2024-09-25",
         "file": "Html.pdf"
-      },
-      "experience": {
-        "date": "2021 - 2023",
-        "title": "Frontend Developer",
-        "company": {
-          "name": "Tech Innovations",
-          "url": "#"
-        },
-        "description": "Developed interactive and responsive websites using modern JavaScript frameworks."
       }
     },
     {
@@ -81,15 +54,6 @@
         "issuedDate": "2023-03-18",
         "expirationDate": "2026-03-18",
         "file": "excel-I.pdf"
-      },
-      "experience": {
-        "date": "2023 - Present",
-        "title": "Full Stack Developer",
-        "company": {
-          "name": "CodeCrafters",
-          "url": "#"
-        },
-        "description": "Building scalable web applications and optimizing backend performance."
       }
     },
     {
