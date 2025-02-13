@@ -44,6 +44,26 @@
           "university": "ABC Institute",
           "year": "2020 - 2022"
         }
+      ],
+      "projects": [
+        {
+          "name": "Portfolio Website",
+          "description": "Developed a personal portfolio website using HTML, CSS, and JavaScript.",
+          "technologies": ["HTML", "CSS", "JavaScript"],
+          "url": "https://portfolio.example.com"
+        },
+        {
+          "name": "E-commerce Platform",
+          "description": "Built a full-stack e-commerce platform using React and Node.js.",
+          "technologies": ["React", "Node.js", "MongoDB"],
+          "url": "https://ecommerce.example.com"
+        },
+        {
+          "name": "Chat Application",
+          "description": "Created a real-time chat application using Socket.io and Express.js.",
+          "technologies": ["Socket.io", "Express.js", "MongoDB"],
+          "url": "https://chatapp.example.com"
+        }
       ]
     }
   ]
