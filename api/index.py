@@ -154,18 +154,30 @@ def get_user_certificate(user_id):
         return jsonify(certificate)
     return jsonify({"error": "Certificate not found for this user"}), 404
 
-# Route to fetch a user's experience details
+# GET a user's experience details
 @app.route("/users/<int:user_id>/experience", methods=["GET"])
 def get_user_experience(user_id):
-    user = next((u for u in users if u.get("id") == user_id), None)
+    data = load_data()
+    user = next((u for u in data.get("users", []) if u.get("id") == user_id), None)
     if not user:
         return jsonify({"error": "User not found"}), 404
-    # Ensure 'experience' exists and is a list
     experience = user.get("experience", [])
     if not experience:
         return jsonify({"error": "Experience data not available for this user"}), 404
     return jsonify(experience)
 
+# GET a user's education details
+@app.route("/users/<int:user_id>/education", methods=["GET"])
+def get_user_education(user_id):
+    data = load_data()
+    user = next((u for u in data.get("users", []) if u.get("id") == user_id), None)
+    if not user:
+        return jsonify({"error": "User not found"}), 404
+    education = user.get("education", [])
+    if not education:
+        return jsonify({"error": "Education data not available for this user"}), 404
+    return jsonify(education)
+    
 # Serve a PDF certificate file
 @app.route('/list-pdfs', methods=['GET'])
 def list_pdfs():
