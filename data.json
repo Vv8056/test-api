@@ -53,7 +53,8 @@
           "name": "Library Management System",
           "description": "Built a full-stack library management system using Python and Php.",
           "technologies": ["Html & Css", "Js", "Python & Php", "Sqlite3 DB"],
-          "url": "https://ecommerce.example.com"
+          "url": "https://ecommerce.example.com",
+          "date": "mar - jun 2024"
         },
         {
           "name": "Chat Application",
