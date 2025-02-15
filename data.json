@@ -50,9 +50,10 @@
           "url": "https://portfolio.example.com"
         },
         {
-          "name": "E-commerce Platform",
-          "description": "Built a full-stack e-commerce platform using React and Node.js.",
-          "technologies": ["React", "Node.js", "MongoDB"],
+          "date":"mar - jun 2024"
+          "name": "Library Management System",
+          "description": "Built a full-stack library management system using Python and Php.",
+          "technologies": ["Html & Css", "Js", "Python & Php", "Sqlite3 DB"],
           "url": "https://ecommerce.example.com"
         },
         {
