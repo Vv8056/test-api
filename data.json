@@ -15,22 +15,13 @@
       },
       "experience": [
         {
-          "date": "2018 - 2019",
-          "title": "Illustrator",
+          "date": "2024 - Present",
+          "title": "Freelance Illustrator",
           "company": {
-            "name": "Creative Mind",
+            "name": "Self-Employed",
             "url": "#"
-          },
-          "description": "Created original illustrations for digital and print media."
         },
-        {
-          "date": "2019 - 2021",
-          "title": "UI/UX Designer",
-          "company": {
-            "name": "Pixel Perfect",
-            "url": "#"
-          },
-          "description": "Designed user-friendly interfaces and enhanced user experience."
+        "description": "Creating original illustrations for digital and print media while continuously learning and improving design skills through personal projects and freelance work."
         }
       ],
       "education": [
