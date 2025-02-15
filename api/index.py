@@ -178,6 +178,19 @@ def get_user_education(user_id):
         return jsonify({"error": "Education data not available for this user"}), 404
     return jsonify(education)
 
+@app.route("/education", methods=["GET"])
+def get_all_education():
+    data = load_data()
+    all_education = []
+
+    # Loop through all users and collect projects
+    for user in data.get("users", []):
+        if "education" in user and isinstance(user["education"], list):
+            all_education.extend(user["education"])  # Add user's projects to the list
+    if not all_education:
+        return jsonify({"error": "No education found"}), 404
+    return jsonify(all_education)
+    
 @app.route("/projects", methods=["GET"])
 def get_all_projects():
     data = load_data()
