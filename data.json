@@ -50,7 +50,7 @@
           "url": "https://portfolio.example.com"
         },
         {
-          "date":"mar - jun 2024"
+          "date":"mar - jun 2024",
           "name": "Library Management System",
           "description": "Built a full-stack library management system using Python and Php.",
           "technologies": ["Html & Css", "Js", "Python & Php", "Sqlite3 DB"],
