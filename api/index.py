@@ -109,7 +109,9 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)  # Allow all origins (Consider restricting this in production)
+# CORS(app)  # Allow all origins (Consider restricting this in production)
+# Allow only specific domains (change to your frontend domain)
+CORS(app, resources={r"/*": {"origins": ["https://portfolio-ochre-one-65.vercel.app"]}})
 
 # Paths
 DATA_FILE = "data.json"
