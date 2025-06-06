@@ -48,7 +48,6 @@
           "description": "Developed a personal portfolio website using HTML, CSS, and JavaScript.",
           "technologies": ["HTML", "CSS", "JavaScript"],
           "url": "https://portfolio.example.com"
-          "date": "dec 2024"
         },
         {
           "name": "Library Management System",
@@ -62,7 +61,6 @@
           "description": "Created a real-time online music application that stream your favourate songs anytime using flutter.",
           "technologies": ["Flutter", "flask"],
           "url": "https://chatapp.example.com"
-          "date": "Still developing"
         }
       ]
     },
