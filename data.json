@@ -57,9 +57,9 @@
           "date": "mar - jun 2024"
         },
         {
-          "name": "Chat Application",
-          "description": "Created a real-time chat application using Socket.io and Express.js.",
-          "technologies": ["Socket.io", "Express.js", "MongoDB"],
+          "name": "Online Music Application",
+          "description": "Created a real-time online music application that stream your favourate songs anytime using flutter.",
+          "technologies": ["Flutter", "flask"],
           "url": "https://chatapp.example.com"
         }
       ]
